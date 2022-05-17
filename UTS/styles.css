@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    min-height: 100vh;
+}
+.container{
+    max-width: 1280px;
+    margin: auto;
+    padding: 20px;
+    background-color: #ddd;
+}
+.container h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.table > .common, .table > .header{
+    display: grid;
+    grid-template-columns: 50px 2fr 1fr 1fr 1fr 2fr 1.5fr 1fr 2fr;
+    border-bottom: 1px solid black;
+    padding: 5px 10px;
+}
+.table > .acommon{
+    display: none;
+    margin: 5px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+button{
+    width: 100px;
+    padding: 5px 10px;
+    background-color: rgb(40, 175, 40);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+.mainButton{
+    margin: 10px;
+}
+.active{
+    background-color: red;
+}
+#input{
+    display: none;
+    padding: 10px;
+}
+form{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 20px;
+}
+li{
+    list-style: none;
+}
+form li:not(:nth-child(10)):not(:nth-child(14)) input, form li > div{
+    width: 100%;
+    margin: 5px 0;
+    padding: 5px;
+    outline: none;
+    border-radius: 2px;
+    border: 1px solid black;
+}
+form li > div > label{
+    display: inline-block;
+    width: 60px;
+}
+#li-submit{
+    margin: 5px 0;
+    align-self: end;
+    display: flex;
+    justify-content: end;
+}
+.table > div:nth-child(1){
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a>span:hover{
+    text-decoration: underline;
+    color: blue;
+}
+.table > .common:hover{
+    cursor: pointer;
+    background-color: #eee;
+}
+.table > .common > p > span{
+    background-color: green;
+    color: white;
+    padding: 2px 5px;
+}
+.header p:nth-child(9){
+    text-align: center;
+}
+.common > div{
+    display: flex;
+    justify-content: space-evenly;
+}
+.common > div > a{
+    background-color: skyblue;
+    padding: 2px 5px;
+}
+.acommon{
+    display: flex;
+    justify-content: space-between;
+}
+.acommon span{
+    display: inline-block;
+    width: 120px;
+}
